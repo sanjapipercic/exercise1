@@ -1,0 +1,17 @@
+<h1>Users</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Street</th>
+    </tr>
+    <tr *ngFor="let u of users">
+        <td>{{u.id}}</td>
+        <td><a routerLink="/todo/{{u.id}}">{{u.name}}</a></td>
+        <td>{{u.username}}</td>
+        <td>{{u.email}}</td>
+        <td>{{u.address.street}}</td>
+    </tr>
+</table>
